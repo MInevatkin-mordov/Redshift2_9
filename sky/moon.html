@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#120b07" />
+    <title>Redshift — Луна</title>
+    <script src="../theme.js?v=2"></script>
+    <link rel="stylesheet" href="styles.css?v=15" />
+  </head>
+  <body>
+    <header class="rs-top"><a class="rs-brand" href="../#/">Red<span>shift</span></a><nav aria-label="Разделы"><a href="../#/">Главная</a><a href="../#/catalog">Карликовые планеты</a><a href="../#/sky">Небо</a><a href="moon.html" class="on">Луна</a><a href="mega.html">Mega Science</a></nav></header>
+<header class="header"></header>
+    <main class="exam-main">
+      <section class="exam-bar" aria-label="Параметры режима">
+        <h1>Луна<em>Перетащи маркеры с названиями морей и кратеров на фото, затем проверь ответ.</em></h1>
+        <button class="secondary" id="study" type="button">📖 Изучение</button>
+        <button class="secondary" id="mode" type="button">Режим</button>
+        <button class="secondary" id="reset" type="button">↻ Сбросить</button>
+        <button class="primary" id="check" type="button">Проверить <span>↗</span></button>
+      </section>
+      <div id="summary" hidden></div>
+      <div id="moon"><p class="fine">Загрузка…</p></div>
+    </main>
+    <dialog id="mode-dialog" class="mode-dialog"></dialog>
+    <script type="module" src="moon.js?v=16"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#120b07" />
+    <title>Redshift — Экзамен</title>
+    <script src="../theme.js?v=2"></script>
+    <link rel="stylesheet" href="styles.css?v=14" />
+  </head>
+  <body>
+    <header class="rs-top"><a class="rs-brand" href="../#/">Red<span>shift</span></a><nav aria-label="Разделы"><a href="../#/">Главная</a><a href="../#/catalog">Карликовые планеты</a><a href="../#/sky" class="on">Небо</a><a href="moon.html">Луна</a><a href="mega.html">Mega Science</a></nav></header>
+<header class="header"><span class="sub-label">Карты</span><nav aria-label="Карты"><a class="nav" href="./">Варианты</a><button class="nav active" id="practice-nav">Экзамен</button><a class="nav" href="cards.html">Карточки</a><a class="nav" href="quiz/quiz.html">Квиз</a><button class="nav" id="catalog-nav">Каталог</button><button class="nav" id="history-nav">Мой прогресс <span id="history-count">0</span></button><button class="nav" id="help-nav">Как заниматься <span>↗</span></button></nav></header>
+    <main class="exam-main">
+      <section class="exam-bar" aria-label="Параметры экзамена">
+        <h1>Экзамен<em>Отметь звёзды и объекты на карте, затем проверь все ответы сразу.</em></h1>
+        <label>Seed<input id="seed" inputmode="numeric" autocomplete="off" /></label>
+        <label
+          >Уровень
+          <select id="level">
+            <option value="beginner">Начальный · α–β</option>
+            <option value="standard">Базовый · α–δ</option>
+            <option value="advanced">Продвинутый · α–θ</option>
+            <option value="expert">Экспертный · все звёзды</option>
+          </select></label
+        >
+        <button class="secondary" id="apply" type="button">Открыть</button>
+        <button class="secondary" id="new" type="button">↻ Новое задание</button>
+        <button class="primary" id="check" type="button">Проверить всё <span>↗</span></button>
+      </section>
+      <div id="summary" hidden></div>
+      <div id="quiz"><p class="fine">Загрузка…</p></div>
+    </main>
+    <script type="module" src="exam.js?v=10"></script>
+  </body>
+</html>
